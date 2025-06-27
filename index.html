@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" /> <!-- Placeholder icon, can be updated -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#06B6D4" />
+  <meta name="description" content="Learnova - AI-powered study helper for students" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>Learnova AI Study Helper</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'xs': '375px',   // Small mobile devices
+          'sm': '640px',   // Larger mobile devices
+          'md': '768px',   // Tablets
+          'lg': '1024px',  // Laptops/Desktops
+          'xl': '1280px',  // Large desktops
+          '2xl': '1536px', // Extra large screens
+        },
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: "#06B6D4", // Cyan 500
+              dark: "#0891B2",   // Cyan 600
+              light: "#67E8F9"   // Cyan 300 - for better contrast on small screens
+            },
+            primary: {
+              DEFAULT: "#3B82F6", // Blue 500
+              hover: "#2563EB",  // Blue 600
+              text: "#FFFFFF"     // White
+            },
+            // Example: from-primary-DEFAULT to-purple-600
+            // primary-DEFAULT (blue-500) works well with purple-600 (#7C3AED)
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Lexend', 'sans-serif'],
+          },
+          spacing: {
+            '72': '18rem',
+            '84': '21rem',
+            '96': '24rem',
+          },
+        },
+      },
+      plugins: [
+        // require('@tailwindcss/typography'), // Removed: 'require' is not defined in browsers and this plugin needs a build step.
+      ],
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Lexend', sans-serif;
+    }
+    /* Responsive font sizes */
+    @media (max-width: 640px) {
+      body {
+        font-size: 14px;
+      }
+    }
+    /* Animations */
+    @keyframes fadeInScaleUp {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    /* Touch optimizations for mobile */
+    @media (hover: none) {
+      button, a {
+        -webkit-tap-highlight-color: transparent;
+      }
+    }
+    /* Scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+       background: #94a3b8;
+     }
+    .animate-fadeInScaleUp { 
+      animation: fadeInScaleUp 0.3s ease-out forwards; 
+    }
+    /* Simple scrollbar styling for a cleaner look */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9; /* slate-100 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #94a3b8; /* slate-400 */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #64748b; /* slate-500 */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.6.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
