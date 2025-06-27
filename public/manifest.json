@@ -1,10 +1,9 @@
-
 {
   "short_name": "Learnova",
   "name": "Learnova AI Study App",
   "icons": [
     {
-      "src": "https://picsum.photos/192/192", 
+      "src": "https://picsum.photos/192/192",
       "type": "image/png",
       "sizes": "192x192"
     },
@@ -17,5 +16,9 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#00BCD4",
-  "background_color": "#f5f7fa"
+  "background_color": "#f5f7fa",
+  "description": "Learnova is an AI-powered study assistant that helps students solve doubts, generate notes, and prepare for exams like JEE, NEET, and CBSE.",
+  "orientation": "portrait",
+  "scope": "/",
+  "prefer_related_applications": false
 }

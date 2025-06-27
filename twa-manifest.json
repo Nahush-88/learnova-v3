@@ -1,0 +1,51 @@
+{
+  "packageId": "com.learnova.ai",
+  "host": "learnova-v3.vercel.app",
+  "name": "Learnova - AI study Assistant",
+  "launcherName": "Learnova",
+  "display": "standalone",
+  "themeColor": "#00BCD4",
+  "themeColorDark": "#000000",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#7CC0FF",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "https://i.ibb.co/Tx2gqkt4/logo-1.png",
+  "maskableIconUrl": "https://i.ibb.co/Tx2gqkt4/logo-1.png",
+  "monochromeIconUrl": "https://i.ibb.co/4nFQrWcR/mono-2.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "C:\\Users\\Dilip\\Desktop\\Learnova 2 the real and best\\studyai\\android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://learnova-v3.vercel.app/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "playBilling": {
+      "enabled": true
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://learnova-v3.vercel.app/",
+  "minSdkVersion": 21,
+  "orientation": "portrait",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
+  "appVersion": "1"
+}
